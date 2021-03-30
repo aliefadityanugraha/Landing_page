@@ -6,7 +6,6 @@
 }
 body {
   font-family: Lato, sans-serif;
-  min-height: 2000px;
   color: white;
 }
 
@@ -130,6 +129,16 @@ h2 {
   color: white;
   width: 30%;
   padding-top:310px;
+}
+#footer {
+  top: 0px;
+  bottom:0px;
+  padding:20px 0px 20px 0px;
+   width: 100%;
+  background-color: rgba(0, 0, 0, 0.541);
+}
+h3{
+  text-align:center;
 }
 @media only screen and (max-width: 600px) {
   .box {
