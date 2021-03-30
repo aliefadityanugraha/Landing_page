@@ -1,0 +1,144 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Lato, sans-serif;
+  min-height: 2000px;
+  color: white;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/portfolio6.jpg);
+  background-size: cover;
+  z-index: -1;
+}
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+
+  width: 100%;
+  background-color: rgba(56, 56, 56, 0.541);
+}
+nav ul {
+  margin: auto;
+  padding: 20px 0px 20px 850px;
+}
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+a {
+  color: white;
+  font-weight: 500;
+  font-size: 17px;
+  text-decoration: none;
+  text-shadow: 2px 2px rgba(70, 69, 69, 0.658);
+}
+a:hover {
+  color: rgb(7, 7, 7);
+  text-decoration: underline;
+}
+img {
+  position: fixed;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+h1 {
+  margin: auto;
+  padding-top: 230px;
+  justify-content: center;
+  text-align: center;
+  font-size: 1em;
+}
+
+/* Typed Js */
+h2 {
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 100px;
+  
+}
+
+.typed {
+  border-bottom: 2px solid #ffffff;
+ 
+  }
+}
+
+.typed-cursor {
+  opacity: 1;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Box */
+/* 
+#box1 {
+  height: 500px;
+  width: 400px;
+  background: rgba(255, 255, 255, 0.281);
+  margin-top: 500px;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-shadow: black;
+  padding: 10px;
+}
+#box2 {
+  height: 500px;
+  width: 400px;
+  background: rgba(255, 255, 255, 0.281);
+  margin-top: 500px;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-shadow: black;
+  padding: 10px;
+} */
+.container {
+  display: table;
+  width: 100%;
+}
+.box {
+  display: table-cell;
+  padding: 16px;
+  color: white;
+  width: 30%;
+  padding-top:310px;
+}
+@media only screen and (max-width: 600px) {
+  .box {
+    display: block;
+    width: 100%;
+    margin-top:100px;
+   
+  img {
+    z-index: -1;
+  }
+ 
+}
