@@ -4,12 +4,17 @@
 * {
   box-sizing: border-box;
 }
+html,body{
+  height:100%;
+  margin:0;
+   padding:0;
+}
 body {
   font-family: Lato, sans-serif;
   color: white;
 }
 
-body::before {
+/* body::before {
   content: "";
   position: fixed;
   top: 0;
@@ -19,7 +24,7 @@ body::before {
   background-image: url(img/portfolio6.jpg);
   background-size: cover;
   z-index: -1;
-}
+} */
 #navbar {
   position: fixed;
   top: 0px;
@@ -73,7 +78,7 @@ h2 {
   font-weight: 100px;
   
 }
-
+/* TYOED JAVA SCRIPT */
 .typed {
   border-bottom: 2px solid #ffffff;
  
@@ -97,30 +102,9 @@ h2 {
   }
 }
 
-/* Box */
-/* 
-#box1 {
-  height: 500px;
-  width: 400px;
-  background: rgba(255, 255, 255, 0.281);
-  margin-top: 500px;
-  margin-left: 20px;
-  margin-right: 20px;
-  box-shadow: black;
-  padding: 10px;
-}
-#box2 {
-  height: 500px;
-  width: 400px;
-  background: rgba(255, 255, 255, 0.281);
-  margin-top: 500px;
-  margin-left: 20px;
-  margin-right: 20px;
-  box-shadow: black;
-  padding: 10px;
-} */
+
 .container {
-  display: table;
+  display: flexbox;
   width: 100%;
 }
 .box {
@@ -128,24 +112,114 @@ h2 {
   padding: 16px;
   color: white;
   width: 30%;
-  padding-top:310px;
+  padding-top:320px;
+}
+.card {
+  display: table-cell;
+  padding: 16px;
+  color: white;
+  width: 30%;
 }
 #footer {
   top: 0px;
   bottom:0px;
+  left:0px;
+  right:0px;
   padding:20px 0px 20px 0px;
-   width: 100%;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.541);
 }
-h3{
+h3,h4{
   text-align:center;
+}
+
+#footer ul li {
+  text-align: center;
+  display:inline-block;
+}
+#animation {
+  height:100%;
+  width:100%;
+  padding:10px 10px 10px 10px;
+  background:black;
+  justify-content: center;
+  text-align: center;
+  
+}
+#animation:hover {
+  height:100%;
+  width:100%;
+  padding:10px;
+  background:white;
+  color:black;
+  animation: animation-1 1s;
+  justify-content: center;
+  text-align: center;
+ 
+}
+@keyframes animation-1{
+  0%{transform:rotate(0deg);}
+  100%{transform:rotate(360deg);}
+}
+
+
+/* SKILL BAR */
+.skill-bar{
+   text-align: left;
+   padding: 5px;
+   font-size: 12px;
+  }
+.skill{
+   color: #fff;
+   font-size: 12px;
+   text-align: center;
+   border-radius: 10px;
+   
+  }
+.html{width: 90%;background-color: #22eb72}
+.css{width: 70%;background-color: #1E80FA}
+.js{width: 10%;background-color: #DBE223}
+.php{width: 20%;background-color: #E93232}
+.mysql{width: 20%;background-color: #E93232}
+
+
+.form {
+  display: block;
+}
+label {
+  padding:10px;
+}
+input{
+  border-radius: 20px;
+  height:35px;
+  width:500px;
+}
+
+#input2{
+  border-radius: 20px;
+  height:90px;
+  width:500px;
+}
+#name{
+  margin:10px;
+}
+button{
+  height:30px;
+  width:100px;
+  padding:5px;
+  border-radius: 25px;
+  margin:10px;
+  background:chocolate;
+}
+placeholder {
+  text-align: center;
 }
 @media only screen and (max-width: 600px) {
   .box {
     display: block;
     width: 100%;
     margin-top:100px;
-   
+  }
   img {
     z-index: -1;
   }
