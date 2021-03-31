@@ -29,13 +29,13 @@ body {
   position: fixed;
   top: 0px;
   left: 0px;
-
   width: 100%;
   background-color: rgba(56, 56, 56, 0.541);
+  display:inline-flex;
 }
 nav ul {
   margin: auto;
-  padding: 20px 0px 20px 850px;
+  padding: 20px 0px 20px 660px;
 }
 nav li {
   display: inline;
@@ -49,7 +49,7 @@ a {
   text-shadow: 2px 2px rgba(70, 69, 69, 0.658);
 }
 a:hover {
-  color: rgb(7, 7, 7);
+  color: salmon;
   text-decoration: underline;
 }
 img {
@@ -62,11 +62,14 @@ img {
   z-index: -1;
 }
 h1 {
-  margin: auto;
-  padding-top: 230px;
-  justify-content: center;
-  text-align: center;
+  text-align: start;
   font-size: 1em;
+  margin-left:100px;
+}
+h5 {
+  margin:auto;
+  padding-top:220px;
+  text-align: center;
 }
 
 /* Typed Js */
@@ -78,10 +81,9 @@ h2 {
   font-weight: 100px;
   
 }
-/* TYOED JAVA SCRIPT */
+/* TYPED JAVA SCRIPT */
 .typed {
-  border-bottom: 2px solid #ffffff;
- 
+  border-bottom: 1.5px solid #ffffff;
   }
 }
 
@@ -106,13 +108,21 @@ h2 {
 .container {
   display: flexbox;
   width: 100%;
+
+}
+section {
+  margin-top:330px;
+  width:100%;
+  background:rgba(255, 254, 254, 0.37);
+  padding:10px 30px 10px 30px;
+
 }
 .box {
   display: table-cell;
   padding: 16px;
-  color: white;
+  color: black;
   width: 30%;
-  padding-top:320px;
+  /* padding-top:320px; */
 }
 .card {
   display: table-cell;
@@ -176,13 +186,24 @@ h3,h4{
    border-radius: 10px;
    
   }
-.html{width: 90%;background-color: #22eb72}
-.css{width: 70%;background-color: #1E80FA}
-.js{width: 10%;background-color: #DBE223}
-.php{width: 20%;background-color: #E93232}
-.mysql{width: 20%;background-color: #E93232}
 
+.html{
+  width:90%;background-color:black;
+}
+.css{
+  width: 70%;background-color: #1E80FA
+}
+.js{
+  width: 10%;background-color: #DBE223
+}
+.php{
+  width: 20%;background-color: #E93232
+}
+.mysql{
+  width: 20%;background-color: green;
+}
 
+/* FORM  */
 .form {
   display: block;
 }
@@ -193,12 +214,14 @@ input{
   border-radius: 20px;
   height:35px;
   width:500px;
+  border:0px;
 }
 
 #input2{
   border-radius: 20px;
   height:90px;
   width:500px;
+  border:0px;
 }
 #name{
   margin:10px;
@@ -210,10 +233,23 @@ button{
   border-radius: 25px;
   margin:10px;
   background:chocolate;
+  border:0px;
 }
 placeholder {
   text-align: center;
 }
+img .end {
+  width:20%;
+
+}
+/* #login{
+  height:30px;
+  width:50px;
+  padding:5px;
+  border-radius: 25px;
+  background:blue;
+  border:0px;
+} */
 @media only screen and (max-width: 600px) {
   .box {
     display: block;
@@ -223,5 +259,53 @@ placeholder {
   img {
     z-index: -1;
   }
+  #navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: rgba(56, 56, 56, 0.541);
+  display:inline-flex;
+}
+nav ul {
+  margin: auto;
+  padding: 20px 0px 20px 10px;
+}
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+a {
+  color: white;
+  font-weight: 500;
+  font-size: 10px;
+  text-decoration: none;
+  text-shadow: 2px 2px rgba(70, 69, 69, 0.658);
+}
+h1 {
+  text-align: start;
+  font-size: 12px;
+  margin-left:15px;
+}
+h2 {
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 100px;
+  
+}
+/* TYPED JAVA SCRIPT */
+.typed {
+  border-bottom: 2px solid #ffffff;
+  }
+}
+
+.typed-cursor {
+  opacity: 1;
+  animation: blink 0.7s infinite;
+ 
+}
+
  
 }
